@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Skills.css';
 import SkillCard from './SkillCard/SkillCard';
 import { SKILLS } from "../../utils/data"
+import SkillsInfoCard from './SkillsInfoCard/SkillsInfoCard';
 
 const Skills = () => {
 
@@ -29,9 +30,10 @@ const Skills = () => {
                         />
                     ))}
                 </div>
+
                 <div className="skills-info">
                     <SkillsInfoCard
-                        headings={selectedSkill.title}
+                        heading={selectedSkill.title}
                         skills={selectedSkill.skills}
                     />
                 </div>
