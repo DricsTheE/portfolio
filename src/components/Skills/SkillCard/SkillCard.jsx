@@ -7,6 +7,9 @@ const SkillCard = ({ title, iconUrl, isActive, onClick }) => {
         className={`skills-card ${isActive ? "active" : ""}`}
         onClick={() => onClick()}
         >
+            {/* Check for user clicking on the card */}
+
+            {/* Create card to display skills */}
             <div className="skill-icon">
                 <img src={iconUrl} alt={title} />
             </div>

@@ -1,8 +1,8 @@
 .skills-info-card {
     min-height: 23rem;
     border-radius: 0.65rem;
-    border: 1.5px solid #6751b9;
-    background: rgba(22, 17, 47, 0.398);
+    border: 1.5px solid #58cfe4;
+    background: rgb(17, 43, 47);
     backdrop-filter: blur(1rem);
 }
 
@@ -10,11 +10,11 @@
     font-size: 1.2rem;
     font-weight: 500;
     padding: 0.8rem 2rem;
-    background: linear-gradient(180deg, #ac96ff 0%, #7c5fe6);
+    background: linear-gradient(180deg, #92d3df 0%, #32c9e4);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border-bottom: 1.5px solid #6751b9;
+    border-bottom: 1.5px solid #58cfe4;
 
 }
 
@@ -34,7 +34,7 @@
 }
 
 .skill-info .percentage {
-    color: #dd8cfa;
+    color: #05c950;
 }
 
 .skill-progress-bg {
@@ -49,7 +49,7 @@
 .skill-progress {
     width: 0%;
     height: 0.5rem;
-    background: linear-gradient(90deg, #aa94fe -50%, #7d60e6 50%);
+    background: linear-gradient(90deg, #fdfdfd -50%, #04752f 50%);
     border-radius: 0.5rem;
     transition: all 0.5s ease-in-out;
 }

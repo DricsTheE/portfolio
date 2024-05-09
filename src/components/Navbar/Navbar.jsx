@@ -5,39 +5,44 @@ import MobileNav from "./MobileNav/MobileNav";
 
 const Navbar = () => {
 
+    // Determines mobile menu state
     const [openMenu, setOpenMenu] = useState(false);
 
+    // Function to toggle mobile menu
     const toggleMenu = () => {
         setOpenMenu(!openMenu);
     };
 
     return (
         <>
+            {/* Toggle mobile menu */}
             <MobileNav isOpen={openMenu} toggleMenu={toggleMenu}/>
+            
             <nav className="nav-wrapper">
                 <div className="nav-content">
+                    {/* Navbar */}
                     <img src={pfplogo} alt="logo" className="logo" />
                     <ul>
+                        {/* List the navigational links */}
                         <li>
-                            <a className="menu-item">Home</a>
+                            {/* a href links to jump to parts of the page */}
+                            <a  href='#hero' className="menu-item">Home</a>
                         </li>
                         <li>
-                            <a className="menu-item">Skills</a>
+                            <a  href='#skills' className="menu-item">Skills</a>
                         </li>
                         <li>
-                            <a className="menu-item">Work Experience</a>
+                            <a href='#projects' className="menu-item">Projects</a>
                         </li>
                         <li>
-                            <a className="menu-item">Contact Me</a>
+                            <a href='#contact' className="menu-item">Contact Me</a>
                         </li>
-                        <button className="contact-btn">
-                            Click Me
-                        </button>
                     </ul>
 
+                    {/* Button to open or close the mobile navbar menu */}
                     <button className="menu-btn" onClick={toggleMenu}>
-                        <span class={"material-symbols-outlined"} style={{ fontsize: "1.8rem" }}>
-                            {openMenu ? "Close" : "menu"}
+                        <span style={{ fontsize: "0.85rem" }}>
+                            {openMenu ? "Close" : "Menu"}
                         </span>
                     </button>
                 </div>
